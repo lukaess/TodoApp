@@ -1,0 +1,17 @@
+<h1>Welcome</h1>
+<div class="container">
+    <div class="card">
+        <h5 class="card-header">News</h5>
+        <div class="card-body">
+          <h5 class="card-title">dear {{name}}</h5>
+          <p class="card-text">If you want to manage your Todo list click on the button! We are working on new features on the site.</p>
+          <a routerLink = "/todos" class="btn btn-primary">Manage Todo-list</a>
+        </div>
+      </div>
+</div>
+
+<div class="container">
+  <button (click)="getWelcomeMessage()" class="btn btn-success">Get Welcome Message</button>
+  <p *ngIf="errorMessage">{{errorMessage}}</p>
+</div>
+
